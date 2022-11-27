@@ -1,0 +1,17 @@
+.main{
+    color: royalblue;
+}
+.center{
+    text-align: center;
+    padding: 1em;
+    margin: 4em;
+    border: 4px solid burlywood;
+
+}
+li{
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid burlywood;
+
+
+}
