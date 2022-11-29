@@ -19,20 +19,21 @@ function App() {
       <div className='main'>
         <div className='center'>
           <header>
-            <h1 style={{ color: "red" }}>Todo list</h1>
+            <h1>Todo list</h1><hr/>
           </header>
           <div>
             <input type="text" id='newTask' placeholder='Enter your task here' onChange={itemEvent}></input>&nbsp;
-            <button onClick={listOfItems}>+</button>
+            <button onClick={()=>{
+                listOfItems()
+                document.getElementById('newTask').value=''
+            }}>+</button>
             <ul>
               {Items.map((itemval) => {
                 return <li> {itemval} </li>;
               })}
-
             </ul>
           </div>
         </div>
-
       </div>
     </>
   );
